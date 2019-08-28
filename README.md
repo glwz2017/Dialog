@@ -19,9 +19,13 @@ Parameters参数
 </thead>
 <tbody>
 <tr>
-<td align="center">rate</td>
-<td align="center">缩放速率</td>
-<td align="center">0.2</td>
+<td align="center">style</td>
+<td align="center">弹窗风格</td>
+<td align="center">
+  <p>'msg'</p>
+  <p>'tips'</p>
+  <p>'confirm'</p>
+  </td>
 </tr>
 <tr>
 <td align="center">src</td>
