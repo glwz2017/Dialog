@@ -103,13 +103,16 @@ Parameters参数
 参考示例：
 
 msg  信息提示
-
- new Dialog({
+<p>
+  <code>
+   new Dialog({
             style: 'msg',
             time: '5000',
             content: '哎呀,冒个泡!!!',
-          
+         
         })
+  </code>
+</p>
 
 
 
