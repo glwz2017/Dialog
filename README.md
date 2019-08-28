@@ -113,9 +113,66 @@ msg  信息提示
   </code>
 </pre>
 
+<p>
+
+tips  信息提示
+</p>
+
+<pre>
+<code>
+new Dialog({
+            style: 'tips',
+            title: '弹窗信息咕噜噜...',
+            area:['800px','200px'],
+            content: '我是弹窗信息,只有确认按钮',
+             confirmBtn:'自定义',
+            onBeforeShow: function () {
+                console.log('我是弹窗前的回调函数');
+            },
+            onShow: function () {
+                console.log('显示后的回调函数');
+            },
+            onClickConfirmBtn: function () {
+                console.log('点击确定按钮的回调函数');
+            }
+        })
+</code>
+
+</pre>
 
 
+<p>
 
+confirm  确认框弹窗提示
+</p>
+
+<pre>
+<code>
+new Dialog({
+            style: 'confirm',
+            content: '我是弹窗信息,只有确认按钮',
+            onBeforeShow: function () {
+                console.log('我是弹窗前的回调函数');
+            },
+            onShow: function () {
+                console.log('显示后的回调函数');
+            },
+            onBeforeClosed: function () {
+                console.log('关闭弹窗前的回调函数');
+            },
+            onClosed: function () {
+                console.log('关闭弹窗后的回调函数');
+            },
+            onClickConfirmBtn: function () {
+                console.log('点击确定按钮的回调函数');
+            },
+            onClickCancelBtn: function () {
+                console.log('点击取消按钮的回调函数');
+            }
+        })
+</code>
+
+</pre>
 
 
 
