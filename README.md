@@ -40,7 +40,7 @@ Parameters参数
 <tr>
 <td align="center">time</td>
 <td align="center">msg 信息提示时长</td>
-<td align="center">3000</td>
+<td align="center">3000 [毫秒]</td>
 </tr>
 <tr>
 <td align="center">content</td>
@@ -48,7 +48,7 @@ Parameters参数
 <td align="center">
   <p>可接受标签 或者 拼接字符串</p>
   <p>示例1：$('#app').html() </p>
-  <p>示例2："<div>我是弹窗内容</div>" </p>
+  <div>示例2："<div>我是弹窗内容</div>" </div>
   </td>
 </tr>
 <tr>
@@ -98,3 +98,25 @@ Parameters参数
 </tr>
 </tbody>
 </table>
+
+
+参考示例：
+
+msg  信息提示
+
+ new Dialog({
+            style: 'msg',
+            time: '5000',
+            content: '哎呀,冒个泡!!!',
+          
+        })
+
+
+
+
+
+
+
+
+
+
