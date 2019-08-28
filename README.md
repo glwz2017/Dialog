@@ -48,8 +48,8 @@ Parameters参数
 <td align="center">
   <p>可接受标签 或者 拼接字符串</p>
   <p>示例1：$('#app').html() </p>
-  <div>示例2："<div>我是弹窗内容</div>" </div>
-  </td>
+   <p>示例2：$('#app').html() </p>
+ </td>
 </tr>
 <tr>
 <td align="center">area</td>
@@ -103,16 +103,15 @@ Parameters参数
 参考示例：
 
 msg  信息提示
-<p>
+<pre>
   <code>
    new Dialog({
             style: 'msg',
             time: '5000',
-            content: '哎呀,冒个泡!!!',
-         
-        })
+            content: '哎呀,冒个泡!!!'
+     })
   </code>
-</p>
+</pre>
 
 
 
