@@ -4,6 +4,9 @@ js 超轻量级,弹窗插件
 无依赖任何插件,直接引入即可
 
 Usages用法
+
+
+
 <script src="js/diyDialog.js"></script>
 
 
@@ -48,7 +51,7 @@ Parameters参数
 <td align="center">
   <p>可接受标签 或者 拼接字符串</p>
   <p>示例1：$('#app').html() </p>
-   <p>示例2：$('#app').html() </p>
+   <p>示例2：'自定义的信息内容....' </p>
  </td>
 </tr>
 <tr>
@@ -148,9 +151,14 @@ confirm  确认框弹窗提示
 
 <pre>
 <code>
-new Dialog({
+ new Dialog({
             style: 'confirm',
-            content: '我是弹窗信息,只有确认按钮',
+            title: '确认标题',
+            hideTitle:true,
+            area:['300px','200px'],
+            content: $('#app').html(),
+            confirmBtn:'Yes',
+            cancelBtn:'No',
             onBeforeShow: function () {
                 console.log('我是弹窗前的回调函数');
             },
