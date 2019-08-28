@@ -28,59 +28,73 @@ Parameters参数
   </td>
 </tr>
 <tr>
-<td align="center">src</td>
-<td align="center">图片资源</td>
-<td align="center"><em>null</em></td>
+<td align="center">hideTitle</td>
+<td align="center">是否隐藏标题</td>
+<td align="center"><em>false</em></td>
 </tr>
 <tr>
-<td align="center">width</td>
-<td align="center">图片加载宽度</td>
-<td align="center">500</td>
+<td align="center">title</td>
+<td align="center">弹窗标题文字</td>
+<td align="center">Title</td>
 </tr>
 <tr>
-<td align="center">min</td>
-<td align="center">图片最小宽度</td>
-<td align="center">300</td>
+<td align="center">time</td>
+<td align="center">msg 信息提示时长</td>
+<td align="center">3000</td>
 </tr>
 <tr>
-<td align="center">max</td>
-<td align="center">图片最大宽度</td>
-<td align="center"><em>null</em></td>
+<td align="center">content</td>
+<td align="center">弹窗内容</td>
+<td align="center">
+  <p>可接受标签 或者 拼接字符串</p>
+  <p>示例1：$('#app').html() </p>
+  <p>示例2："<div>我是弹窗内容</div>" </p>
+  </td>
 </tr>
 <tr>
-<td align="center">markers</td>
-<td align="center">标记点参数数组</td>
-<td align="center">[]</td>
+<td align="center">area</td>
+<td align="center">弹窗大小</td>
+<td align="center">['650px','auto']</td>
 </tr>
 <tr>
-<td align="center">marker_size</td>
-<td align="center">默认标记点尺寸</td>
-<td align="center">20</td>
+<td align="center">confirmBtn</td>
+<td align="center">确认按钮</td>
+<td align="center">确定</td>
 </tr>
 <tr>
-<td align="center">enable_drag</td>
-<td align="center">允许拖拽</td>
-<td align="center">true</td>
+<td align="center">cancelBtn</td>
+<td align="center">取消按钮</td>
+<td align="center">取消</td>
 </tr>
 <tr>
-<td align="center">auto_index_z</td>
-<td align="center">自动配置层级</td>
-<td align="center">true</td>
+<td align="center">onBeforeShow</td>
+<td align="center">弹窗显示前的回调函数</td>
+<td align="center"></td>
 </tr>
 <tr>
-<td align="center">enable_canvas</td>
-<td align="center">添加Canvas绘图层</td>
-<td align="center">false</td>
+<td align="center">onShow</td>
+<td align="center">弹窗显示后的回调函数</td>
+<td align="center"></td>
 </tr>
 <tr>
-<td align="center">zoom_lock</td>
-<td align="center">缩放锁定</td>
-<td align="center">false</td>
+<td align="center">onBeforeClosed</td>
+<td align="center">关闭弹窗前的回调函数</td>
+<td align="center"></td>
 </tr>
 <tr>
-<td align="center">move_limit</td>
-<td align="center">拖动锁边</td>
-<td align="center">false</td>
+<td align="center">onClosed</td>
+<td align="center">弹窗关闭后的回调函数</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">onClickConfirmBtn</td>
+<td align="center">点击确定按钮的回调函数</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">onClickCancelBtn</td>
+<td align="center">点击取消按钮的回调函数</td>
+<td align="center"></td>
 </tr>
 </tbody>
 </table>
